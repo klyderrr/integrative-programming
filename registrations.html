@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Registrations — kly</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="shell">
+
+  <nav class="nav">
+    <div>
+      <p class="brand">kly</p>
+      <p class="brand-sub">Event management</p>
+    </div>
+    <ul class="nav-list">
+      <li><a href="events.html"><span class="num">01</span> Events</a></li>
+      <li><a href="venues.html"><span class="num">02</span> Venues</a></li>
+      <li><a href="attendees.html"><span class="num">03</span> Attendees</a></li>
+      <li><a href="registrations.html" class="active"><span class="num">04</span> Registrations</a></li>
+    </ul>
+    <div class="nav-footer">kly &middot; static mockup</div>
+  </nav>
+
+  <div class="perf"></div>
+
+  <main class="main">
+    <div class="ticket-header">
+      <div>
+        <p class="eyebrow">kly / registrations</p>
+        <h1>Registrations</h1>
+      </div>
+      <div class="ticket-code">No. 004 &mdash; ADMIN VIEW</div>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" class="search" placeholder="Search registrations…" />
+      <button class="btn btn-primary">New registration</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Attendee</th>
+          <th>Event</th>
+          <th>Registered on</th>
+          <th>Ticket type</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cell-primary">Mara Villanueva</td>
+          <td>Signal Conference</td>
+          <td>2026-09-02</td>
+          <td>VIP</td>
+          <td><span class="tag tag-confirmed">Confirmed</span></td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="cell-primary">Ken Ibarra</td>
+          <td>Nightwave Sessions</td>
+          <td>2026-09-15</td>
+          <td>General</td>
+          <td><span class="tag tag-confirmed">Confirmed</span></td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="cell-primary">Priya Santos</td>
+          <td>Founders Workshop</td>
+          <td>2026-09-20</td>
+          <td>Speaker</td>
+          <td><span class="tag tag-pending">Pending</span></td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="cell-primary">Diego Reyes</td>
+          <td>City Makers Meetup</td>
+          <td>2026-09-28</td>
+          <td>General</td>
+          <td><span class="tag tag-cancelled">Cancelled</span></td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+</div>
+</body>
+</html>

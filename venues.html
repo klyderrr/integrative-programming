@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Venues — kly</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="shell">
+
+  <nav class="nav">
+    <div>
+      <p class="brand">kly</p>
+      <p class="brand-sub">Event management</p>
+    </div>
+    <ul class="nav-list">
+      <li><a href="events.html"><span class="num">01</span> Events</a></li>
+      <li><a href="venues.html" class="active"><span class="num">02</span> Venues</a></li>
+      <li><a href="attendees.html"><span class="num">03</span> Attendees</a></li>
+      <li><a href="registrations.html"><span class="num">04</span> Registrations</a></li>
+    </ul>
+    <div class="nav-footer">kly &middot; static mockup</div>
+  </nav>
+
+  <div class="perf"></div>
+
+  <main class="main">
+    <div class="ticket-header">
+      <div>
+        <p class="eyebrow">kly / venues</p>
+        <h1>Venues</h1>
+      </div>
+      <div class="ticket-code">No. 002 &mdash; ADMIN VIEW</div>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" class="search" placeholder="Search venues…" />
+      <button class="btn btn-primary">New venue</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Venue</th>
+          <th>City</th>
+          <th>Capacity</th>
+          <th>Contact</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cell-primary">Harborlight Hall</td>
+          <td>Quezon City</td>
+          <td>480</td>
+          <td>bookings@harborlight.ph</td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="cell-primary">The Underline</td>
+          <td>Makati</td>
+          <td>220</td>
+          <td>events@theunderline.ph</td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="cell-primary">Maple Studio</td>
+          <td>Pasig</td>
+          <td>60</td>
+          <td>hello@maplestudio.ph</td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+</div>
+</body>
+</html>

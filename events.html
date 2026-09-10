@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Events — kly</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="shell">
+
+  <nav class="nav">
+    <div>
+      <p class="brand">kly</p>
+      <p class="brand-sub">Event management</p>
+    </div>
+    <ul class="nav-list">
+      <li><a href="events.html" class="active"><span class="num">01</span> Events</a></li>
+      <li><a href="venues.html"><span class="num">02</span> Venues</a></li>
+      <li><a href="attendees.html"><span class="num">03</span> Attendees</a></li>
+      <li><a href="registrations.html"><span class="num">04</span> Registrations</a></li>
+    </ul>
+    <div class="nav-footer">kly &middot; static mockup</div>
+  </nav>
+
+  <div class="perf"></div>
+
+  <main class="main">
+    <div class="ticket-header">
+      <div>
+        <p class="eyebrow">kly / events</p>
+        <h1>Events</h1>
+      </div>
+      <div class="ticket-code">No. 001 &mdash; ADMIN VIEW</div>
+    </div>
+
+    <div class="toolbar">
+      <input type="text" class="search" placeholder="Search events…" />
+      <button class="btn btn-primary">New event</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Event</th>
+          <th>Date</th>
+          <th>Venue</th>
+          <th>Category</th>
+          <th>Status</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="cell-primary">Signal Conference</td>
+          <td>2026-10-14</td>
+          <td>Harborlight Hall</td>
+          <td>Conference</td>
+          <td><span class="tag tag-open">Open</span></td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="cell-primary">Nightwave Sessions</td>
+          <td>2026-10-22</td>
+          <td>The Underline</td>
+          <td>Concert</td>
+          <td><span class="tag tag-full">Sold Out</span></td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="cell-primary">Founders Workshop</td>
+          <td>2026-11-02</td>
+          <td>Maple Studio</td>
+          <td>Workshop</td>
+          <td><span class="tag tag-draft">Draft</span></td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+        <tr>
+          <td class="cell-primary">City Makers Meetup</td>
+          <td>2026-11-09</td>
+          <td>The Underline</td>
+          <td>Meetup</td>
+          <td><span class="tag tag-open">Open</span></td>
+          <td class="actions-cell">
+            <button class="btn-edit-text">Edit</button>
+            <button class="btn-danger-text">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </main>
+</div>
+</body>
+</html>
