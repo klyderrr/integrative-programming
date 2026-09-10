@@ -39,65 +39,71 @@
       <button class="btn btn-primary">New registration</button>
     </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>Attendee</th>
-          <th>Event</th>
-          <th>Registered on</th>
-          <th>Ticket type</th>
-          <th>Status</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="cell-primary">Mara Villanueva</td>
-          <td>Signal Conference</td>
-          <td>2026-09-02</td>
-          <td>VIP</td>
-          <td><span class="tag tag-confirmed">Confirmed</span></td>
-          <td class="actions-cell">
-            <button class="btn-edit-text">Edit</button>
-            <button class="btn-danger-text">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="cell-primary">Ken Ibarra</td>
-          <td>Nightwave Sessions</td>
-          <td>2026-09-15</td>
-          <td>General</td>
-          <td><span class="tag tag-confirmed">Confirmed</span></td>
-          <td class="actions-cell">
-            <button class="btn-edit-text">Edit</button>
-            <button class="btn-danger-text">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="cell-primary">Priya Santos</td>
-          <td>Founders Workshop</td>
-          <td>2026-09-20</td>
-          <td>Speaker</td>
-          <td><span class="tag tag-pending">Pending</span></td>
-          <td class="actions-cell">
-            <button class="btn-edit-text">Edit</button>
-            <button class="btn-danger-text">Delete</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="cell-primary">Diego Reyes</td>
-          <td>City Makers Meetup</td>
-          <td>2026-09-28</td>
-          <td>General</td>
-          <td><span class="tag tag-cancelled">Cancelled</span></td>
-          <td class="actions-cell">
-            <button class="btn-edit-text">Edit</button>
-            <button class="btn-danger-text">Delete</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="timeline-group">
+      <div class="timeline-group-header">
+        <h3>Signal Conference</h3>
+        <span class="count">1 registration</span>
+      </div>
+      <div class="timeline-item">
+        <div><span class="who">Mara Villanueva</span><span class="ticket-type">VIP</span></div>
+        <div class="right">
+          <span>2026-09-02</span>
+          <span class="tag tag-confirmed">Confirmed</span>
+          <button class="btn-edit-text">Edit</button>
+          <button class="btn-danger-text">Delete</button>
+        </div>
+      </div>
+    </div>
 
+    <div class="timeline-group">
+      <div class="timeline-group-header">
+        <h3>Nightwave Sessions</h3>
+        <span class="count">1 registration</span>
+      </div>
+      <div class="timeline-item">
+        <div><span class="who">Ken Ibarra</span><span class="ticket-type">General</span></div>
+        <div class="right">
+          <span>2026-09-15</span>
+          <span class="tag tag-confirmed">Confirmed</span>
+          <button class="btn-edit-text">Edit</button>
+          <button class="btn-danger-text">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-group">
+      <div class="timeline-group-header">
+        <h3>Founders Workshop</h3>
+        <span class="count">1 registration</span>
+      </div>
+      <div class="timeline-item">
+        <div><span class="who">Priya Santos</span><span class="ticket-type">Speaker</span></div>
+        <div class="right">
+          <span>2026-09-20</span>
+          <span class="tag tag-pending">Pending</span>
+          <button class="btn-edit-text">Edit</button>
+          <button class="btn-danger-text">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-group">
+      <div class="timeline-group-header">
+        <h3>City Makers Meetup</h3>
+        <span class="count">1 registration</span>
+      </div>
+      <div class="timeline-item">
+        <div><span class="who">Diego Reyes</span><span class="ticket-type">General</span></div>
+        <div class="right">
+          <span>2026-09-28</span>
+          <span class="tag tag-cancelled">Cancelled</span>
+          <button class="btn-edit-text">Edit</button>
+          <button class="btn-danger-text">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <p class="sr-note">Static mockup — buttons are for layout only and don't do anything yet.</p>
   </main>
 </div>
 </body>

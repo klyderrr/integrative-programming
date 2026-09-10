@@ -301,3 +301,215 @@ tbody tr:hover{background:#FBFAF7;}
   .brand-sub{display:none;}
   .main{padding:24px 20px 48px;}
 }
+
+/* ================= EVENTS: card grid ================= */
+.event-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:20px;
+}
+.event-card{
+  position:relative;
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:4px;
+  padding:20px 20px 16px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.event-card-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.event-card-category{
+  font-size:12px;
+  color:#6b6656;
+  font-weight:600;
+}
+.event-card-title{
+  font-family:'Fraunces',serif;
+  font-size:20px;
+  margin:0;
+  line-height:1.2;
+}
+.event-card-meta{
+  font-size:13px;
+  color:#5c6b5e;
+  display:flex;
+  gap:6px;
+}
+.event-card-divider{
+  position:relative;
+  border-top:2px dashed var(--line);
+  margin:4px -20px 2px;
+}
+.event-card-divider::before,
+.event-card-divider::after{
+  content:"";
+  position:absolute;
+  top:-8px;
+  width:16px;
+  height:16px;
+  background:var(--paper);
+  border-radius:50%;
+}
+.event-card-divider::before{left:-8px;}
+.event-card-divider::after{right:-8px;}
+.event-card-actions{
+  display:flex;
+  justify-content:flex-end;
+  gap:6px;
+}
+
+/* ================= VENUES: split view ================= */
+.venue-split{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  border:1px solid var(--line);
+  background:var(--white);
+}
+.venue-list{border-right:1px solid var(--line);}
+.venue-list-item{
+  padding:16px 18px;
+  border-bottom:1px solid var(--line);
+  border-left:3px solid transparent;
+}
+.venue-list-item:last-child{border-bottom:none;}
+.venue-list-item.active{
+  background:var(--paper-2);
+  border-left:3px solid var(--moss);
+}
+.venue-list-item h4{
+  margin:0 0 4px;
+  font-family:'Fraunces',serif;
+  font-size:16px;
+}
+.venue-list-item p{
+  margin:0;
+  font-size:12.5px;
+  color:#6b6656;
+}
+.venue-detail{padding:32px;}
+.venue-detail-eyebrow{
+  font-size:12px;
+  color:#6b6656;
+  margin:0 0 6px;
+}
+.venue-detail h2{
+  font-family:'Fraunces',serif;
+  font-size:30px;
+  margin:0 0 18px;
+}
+.venue-stats{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-bottom:26px;
+}
+.venue-stat{
+  border:1px solid var(--line);
+  padding:14px 16px;
+  border-radius:4px;
+}
+.venue-stat .label{
+  font-size:12px;
+  color:#6b6656;
+  margin-bottom:4px;
+}
+.venue-stat .value{
+  font-family:'Fraunces',serif;
+  font-size:22px;
+}
+.venue-detail-actions{
+  display:flex;
+  gap:10px;
+  padding-top:18px;
+  border-top:1px solid var(--line);
+}
+
+/* ================= ATTENDEES: grouped directory ================= */
+.directory-group{margin-bottom:30px;}
+.directory-heading{
+  font-family:'Fraunces',serif;
+  font-size:15px;
+  color:var(--moss);
+  border-bottom:1px solid var(--line);
+  padding-bottom:8px;
+  margin-bottom:6px;
+}
+.directory-row{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:13px 4px;
+  border-bottom:1px solid var(--line);
+}
+.directory-row:last-child{border-bottom:none;}
+.avatar-circle{
+  width:38px;
+  height:38px;
+  border-radius:50%;
+  background:var(--fern);
+  color:var(--paper);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'Fraunces',serif;
+  font-size:15px;
+  flex-shrink:0;
+}
+.directory-info{flex:1;}
+.directory-info .name{font-weight:600;}
+.directory-info .meta{font-size:12.5px;color:#6b6656;}
+.directory-actions{display:flex;gap:4px;}
+
+/* ================= REGISTRATIONS: timeline by event ================= */
+.timeline-group{
+  margin-bottom:22px;
+  border:1px solid var(--line);
+  background:var(--white);
+}
+.timeline-group-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:14px 18px;
+  background:var(--paper-2);
+  border-bottom:1px solid var(--line);
+}
+.timeline-group-header h3{
+  font-family:'Fraunces',serif;
+  font-size:17px;
+  margin:0;
+}
+.timeline-group-header .count{
+  font-size:12.5px;
+  color:#6b6656;
+}
+.timeline-item{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 18px;
+  border-bottom:1px solid var(--line);
+}
+.timeline-item:last-child{border-bottom:none;}
+.timeline-item .who{font-weight:600;}
+.timeline-item .ticket-type{
+  font-size:12.5px;
+  color:#6b6656;
+  margin-left:8px;
+}
+.timeline-item .right{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+@media (max-width:700px){
+  .venue-split{grid-template-columns:1fr;}
+  .venue-list{border-right:none;border-bottom:1px solid var(--line);}
+  .venue-stats{grid-template-columns:1fr;}
+}
